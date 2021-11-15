@@ -1,7 +1,7 @@
 import React from "react";
 export default function Search() {
   return (
-    <div ClassName="Search">
+    <div className="Search">
       <div className="row">
         <div className="col-10">
           <input
@@ -9,7 +9,7 @@ export default function Search() {
             placeholder="Type a city..."
             className="form-control"
             id="city-input"
-            autocomplete="off"
+            autoComplete="off"
           />
         </div>
         <div className="col-1">

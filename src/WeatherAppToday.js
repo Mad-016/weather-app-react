@@ -31,12 +31,10 @@ export default function WeatherAppToday() {
             <p className="row">
               <span className="col-4" id="todays-temp"></span>
               <span className="col-6 units">
-                <a href="#" id="celsius-link" className="active">
+                <span id="celsius-link" className="active">
                   {weatherData.temperature}ºC
-                </a>
-                <a href="#" id="fahrenheit-link">
-                  77ºF
-                </a>
+                </span>
+                <span id="fahrenheit-link">77ºF</span>
               </span>
             </p>
             <p id="description"></p>
