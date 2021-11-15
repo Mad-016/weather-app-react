@@ -4,7 +4,7 @@ export default function Footer() {
     <div className="Footer">
       <small>
         Coded by Madeline Hardy.
-        <a href="https://github.com/Mad-016/Weather-App" target="_blank">
+        <a href="https://github.com/Mad-016/weather-app-react" target="_blank">
           Open-source code
         </a>
         available. Learnt through
