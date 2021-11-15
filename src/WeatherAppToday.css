@@ -1,0 +1,27 @@
+.weather-app-today img {
+  width: 200px;
+}
+
+.weather-app-today {
+  padding: 15px;
+  border: 1.5px solid #f2f3f5;
+  border-radius: 5px;
+  background-color: #f2f3f5;
+  box-shadow: 3px 3px 5px #ad947d;
+}
+
+.weather-app-today .units {
+  position: relative;
+  font-size: 16px;
+}
+
+.weather-app-today .active {
+  color: #ad947d;
+  cursor: default;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.weather-app-today .active:hover {
+  text-decoration: none;
+}
