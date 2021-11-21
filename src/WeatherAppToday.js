@@ -19,7 +19,7 @@ export default function WeatherAppToday(props) {
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
-      iconValue: `../images/${response.data.weather[0].icon}.png`,
+      icon: response.data.weather[0].icon,
     });
   }
 
