@@ -14,7 +14,7 @@ export default function App() {
                 <form id="search-form" className="mb-3">
                   <Search />
                 </form>
-                <WeatherAppToday />
+                <WeatherAppToday defaultCity="Sydney" />
               </div>
               <div className="col-md-4">
                 <div id="forecast"></div>
