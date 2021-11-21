@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./WeatherAppToday.css";
+import FormattedDate from "./FormattedDate.js";
 import axios from "axios";
 
 export default function WeatherAppToday(props) {
@@ -13,11 +14,11 @@ export default function WeatherAppToday(props) {
       city: response.data.name,
       temperature: response.data.main.temp,
       country: response.data.sys.country,
-      date: "Wednesday 20/10/2021",
+      date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
-      iconValue: response.data.weather[0].icon,
+      iconValue: `../images/${response.data.weather[0].icon}.png`,
     });
   }
 
@@ -32,13 +33,13 @@ export default function WeatherAppToday(props) {
           <div className="row">
             <div className="col-6">
               <img
-                src="../images/{weatherData.iconValue}.png"
+                src="../images/10d.png"
                 alt={weatherData.description}
                 id="icon"
               />
             </div>
             <div className="col-sm-6 weather-today">
-              <p id="date">{weatherData.date}</p>
+              <FormattedDate date={weatherData.date} />
               <p>
                 <span id="min-temp">20</span>º |<span id="max-temp">29</span>º
               </p>
