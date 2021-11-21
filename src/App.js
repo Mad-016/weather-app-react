@@ -3,7 +3,7 @@ import Search from "./Search.js";
 import WeatherAppToday from "./WeatherAppToday.js";
 import Footer from "./Footer.js";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="container">
@@ -20,12 +20,12 @@ function App() {
                 <div id="forecast"></div>
               </div>
             </div>
-            <Footer />
+            <div className="footer">
+              <Footer />
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
-export default App;

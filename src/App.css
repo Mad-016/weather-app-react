@@ -1,12 +1,12 @@
 .App {
-  font-family: sans-serif;
-  text-align: center;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  background-color: #aab9be;
+  background-color: #f2f3f5;
 }
 h1 {
   color: #ad947d;
@@ -146,4 +146,8 @@ a:hover {
 .img-fluid {
   height: 10;
   padding-top: 5px;
+}
+
+.App .footer {
+  margin: 10px 0;
 }

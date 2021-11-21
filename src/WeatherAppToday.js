@@ -29,12 +29,14 @@ export default function WeatherAppToday() {
               <span id="min-temp">20</span>º |<span id="max-temp">29</span>º
             </p>
             <p className="row">
-              <span className="col-4" id="todays-temp"></span>
+              <span className="col-4" id="todays-temp">
+                {weatherData.temperature}
+              </span>
               <span className="col-6 units">
                 <span id="celsius-link" className="active">
-                  {weatherData.temperature}ºC
+                  ºC
                 </span>
-                <span id="fahrenheit-link">77ºF</span>
+                <span id="fahrenheit-link">ºF</span>
               </span>
             </p>
             <p id="description"></p>
