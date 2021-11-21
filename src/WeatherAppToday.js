@@ -57,17 +57,17 @@ export default function WeatherAppToday(props) {
                 />
               </div>
               <div className="col-2">
-                <button type="submit" className="btn btn-light w-100">
-                  <span className="material-icons md-24" id="search-icon">
-                    search
-                  </span>
+                <button type="submit" className="btn btn-light w-100 h-100">
+                  search
                 </button>
               </div>
               <div className="col-2">
-                <button type="submit" className="btn btn-light w-100" id="here">
-                  <span className="material-icons md-24" id="here-icon">
-                    here
-                  </span>
+                <button
+                  type="submit"
+                  className="btn btn-light w-100 h-100"
+                  id="here"
+                >
+                  here
                 </button>
               </div>
             </div>

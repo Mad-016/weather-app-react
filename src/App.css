@@ -1,3 +1,10 @@
+:root {
+  --branding-color: #7acfdf;
+  --secondary-color: #f47645;
+  --third-color: #f9ad8d;
+  --fourth-color: #fde3d9;
+}
+
 .App {
   font-family: "Poppins", sans-serif;
   text-align: left;
@@ -6,14 +13,14 @@
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  background-color: #f2f3f5;
+  background-color: var(--fourth-color);
 }
 h1 {
-  color: #ad947d;
+  color: var(--secondary-color);
   font-size: 40px;
   font-weight: 400;
   line-height: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 p {
@@ -23,11 +30,17 @@ p {
 small {
   font-size: 11px;
 }
+
+input,
+button {
+  box-shadow: 3px 3px 5px #7acfdf;
+}
+
 a {
   color: black;
 }
 a:hover {
-  color: #c0d4e7;
+  color: var(--branding-color);
 }
 
 .col-10 {
@@ -47,9 +60,10 @@ a:hover {
 
 .weather-app {
   padding: 20px;
-  border: 2px solid #c0d4e7;
+  background-color: #caeffa;
+  border: 2px solid var(--branding-color);
   border-radius: 5px;
-  box-shadow: 5px 5px 15px #ad947d;
+  box-shadow: 5px 5px 15px var(--third-color);
 }
 
 .weather-app-today {
@@ -57,7 +71,6 @@ a:hover {
   border: 1.5px solid #f2f3f5;
   border-radius: 5px;
   background-color: #f2f3f5;
-  box-shadow: 3px 3px 5px #ad947d;
 }
 
 #country {
@@ -74,7 +87,7 @@ a:hover {
 }
 
 #todays-temp {
-  color: #ad947d;
+  color: var(--secondary-color);
   font-size: 55px;
   line-height: 1;
 }
@@ -83,7 +96,7 @@ a:hover {
 }
 
 #description {
-  color: #ad947d;
+  color: var(--secondary-color);
   font-size: 20px;
   font-weight: 500;
 }
@@ -98,7 +111,7 @@ a:hover {
 }
 
 .weather-app-today .active {
-  color: #ad947d;
+  color: var(--secondary-color);
   cursor: default;
   text-decoration: none;
   font-weight: 500;
@@ -123,7 +136,7 @@ a:hover {
   border-right: 0;
   border-left: 0;
   border-end-end-radius: 30px;
-  box-shadow: 3px 3px 5px #ad947d;
+  box-shadow: 3px 3px 5px var(--secondary-color);
 }
 #search-icon {
   color: #6c757d;

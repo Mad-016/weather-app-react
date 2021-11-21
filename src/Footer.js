@@ -3,13 +3,16 @@ export default function Footer() {
   return (
     <div className="Footer">
       <small>
-        Coded by{" "}
         <a
           href="https://practical-agnesi-fa6c5b.netlify.app/"
           target="_blank"
           rel="noreferrer"
         >
           Madeline Hardy
+        </a>{" "}
+        has coded this page learnt through{" "}
+        <a href="https://www.shecodes.io/" target="_blank" rel="noreferrer">
+          SheCodes
         </a>
         .{" "}
         <a
@@ -19,11 +22,7 @@ export default function Footer() {
         >
           Open-source code{" "}
         </a>
-        available. Learnt through{" "}
-        <a href="https://www.shecodes.io/" target="_blank" rel="noreferrer">
-          SheCodes
-        </a>
-        .
+        available.
       </small>
     </div>
   );

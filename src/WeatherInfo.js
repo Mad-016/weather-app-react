@@ -17,13 +17,10 @@ export default function WeatherInfo(props) {
               <WeatherIcon code={props.data.icon} />
             </div>
             <div className="col-sm-6 weather-today">
-              <FormattedDate date={props.data.date} />
-              <p>
-                <span id="min-temp">20</span>º |<span id="max-temp">29</span>º
-              </p>
               <WeatherTemperature celsius={props.data.temperature} />
+              <p id="description">{props.data.description} </p>
+              <FormattedDate date={props.data.date} />
 
-              <p id="description"></p>
               <p>
                 Humidity: <span id="humidity">{props.data.humidity}</span>%
               </p>

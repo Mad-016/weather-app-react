@@ -36,13 +36,11 @@ export default function WeatherTemperature(props) {
       </span>
     );
   } else {
-    let fahrenheit = (props.celsius * 9) / 5 + 32;
-
     return (
       <span>
         <p className="row">
           <span className="col-4" id="todays-temp">
-            {Math.round(fahrenheit)}
+            {Math.round(fahrenheit())}
           </span>
           <span className="col-6 units">
             <a id="celsius-link" href="/" onClick={showCelsius}>
