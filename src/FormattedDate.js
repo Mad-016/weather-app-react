@@ -1,4 +1,3 @@
-import React from "react";
 export default function FormattedDate(props) {
   let hours = props.date.getHours();
   if (hours < 10) {

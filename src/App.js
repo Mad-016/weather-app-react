@@ -1,5 +1,4 @@
 import "./App.css";
-import Search from "./Search.js";
 import WeatherAppToday from "./WeatherAppToday.js";
 import Footer from "./Footer.js";
 
@@ -11,9 +10,6 @@ export default function App() {
           <div className="weather-app" id="weather-app">
             <div className="row">
               <div className="col-md-8">
-                <form id="search-form" className="mb-3">
-                  <Search />
-                </form>
                 <WeatherAppToday defaultCity="New York" />
               </div>
               <div className="col-md-4">
