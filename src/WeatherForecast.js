@@ -1,4 +1,6 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
+import "./WeatherForecastCSS.css";
 
 export default function WeatherForecast() {
   return (
@@ -13,8 +15,8 @@ export default function WeatherForecast() {
             </p>
           </div>
         </div>
-        <div className="col-4">
-          <span className="img-fluid rounded-start"> image</span>
+        <div className="col-4 image-body">
+          <WeatherIcon code="01d" size={40} />
         </div>
       </div>
     </div>
