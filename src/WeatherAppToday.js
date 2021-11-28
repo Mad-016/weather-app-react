@@ -49,7 +49,7 @@ export default function WeatherAppToday(props) {
             <form id="search-form" className="mb-3" onSubmit={handleSubmit}>
               <div className="Search">
                 <div className="row">
-                  <div className="col-8">
+                  <div className="col-10">
                     <input
                       type="search"
                       placeholder="Type a city..."
@@ -63,15 +63,6 @@ export default function WeatherAppToday(props) {
                   <div className="col-2">
                     <button type="submit" className="btn btn-light w-100 h-100">
                       search
-                    </button>
-                  </div>
-                  <div className="col-2">
-                    <button
-                      type="submit"
-                      className="btn btn-light w-100 h-100"
-                      id="here"
-                    >
-                      here
                     </button>
                   </div>
                 </div>

@@ -30,7 +30,7 @@ export default function WeatherForecastDay(props) {
 
   return (
     <div>
-      <div className="card mb-2">
+      <div className="card mb-2" id="forecast-card">
         <div className="row g-0">
           <div className="col-8">
             <div className="card-body">
