@@ -1,5 +1,6 @@
 import "./App.css";
 import WeatherAppToday from "./WeatherAppToday.js";
+import WeatherForecast from "./WeatherForecast.js";
 import Footer from "./Footer.js";
 
 export default function App() {
@@ -13,7 +14,9 @@ export default function App() {
                 <WeatherAppToday defaultCity="New York" />
               </div>
               <div className="col-md-4">
-                <div id="forecast"></div>
+                <div id="forecast">
+                  <WeatherForecast />
+                </div>
               </div>
             </div>
             <div className="footer">
