@@ -1,11 +1,15 @@
-import React, { useState } from "react";
-import WeatherIcon from "./WeatherIcon";
+import React, { useState, useEffect } from "react";
 import "./WeatherForecastCSS.css";
 import axios from "axios";
+import WeatherForecastDay from "./WeatherForecastDay";
 
 export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
+
+  useEffect(() => {
+    setLoaded(false);
+  }, [props.coordinates]);
 
   function handleResponse(response) {
     setForecast(response.data.daily);
@@ -14,32 +18,20 @@ export default function WeatherForecast(props) {
 
   if (loaded) {
     return (
-      <div className="card mb-2">
-        <div className="row g-0">
-          <div className="col-8">
-            <div className="card-body">
-              <p className="card-text"> Day</p>
-              <p className="card-text">
-                <span className="weather-forecast-temp-min">
-                  {forecast[0].temp.min}
-                </span>
-                º |
-                <span className="weather-forecast-temp-max">
-                  {" "}
-                  {forecast[0].temp.max}
-                </span>
-                º
-              </p>
-            </div>
-          </div>
-          <div className="col-4 image-body">
-            <WeatherIcon code="01d" size={40} />
-          </div>
-        </div>
+      <div>
+        {forecast.map(function (dailyForecast, index) {
+          if (index < 5) {
+            return (
+              <div key={index}>
+                <WeatherForecastDay data={dailyForecast} />
+              </div>
+            );
+          }
+        })}
       </div>
     );
   } else {
-    let apiKey = "82f33736fe5d08022fb7076137f7ac18";
+    let apiKey = "86837b9ed2b9c95124a8b84bda1d4bdd";
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;

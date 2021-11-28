@@ -26,7 +26,7 @@ export default function WeatherAppToday(props) {
   }
 
   function search() {
-    const apiKey = "82f33736fe5d08022fb7076137f7ac18";
+    const apiKey = "86837b9ed2b9c95124a8b84bda1d4bdd";
     let unitsType = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unitsType}`;
     axios.get(apiUrl).then(showTemp);
